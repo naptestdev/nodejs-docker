@@ -4,9 +4,7 @@ require("dotenv/config");
 
 app.get("/", (req, res) => {
   res.send(
-    `Hello world from docker. Testing delay when building image. Your origin is ${req.get(
-      "host"
-    )}`
+    `Hello world from docker. Testing delay. Your origin is ${req.get("host")}`
   );
 });
 
